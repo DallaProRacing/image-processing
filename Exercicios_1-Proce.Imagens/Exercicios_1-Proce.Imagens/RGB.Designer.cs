@@ -94,6 +94,9 @@
             this.textBoxConvertCMYK_G = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBoxConvertCMYK_R = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.tabControl_RGB_HSV.SuspendLayout();
             this.RGB_All.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -393,6 +396,9 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel7.Controls.Add(this.label23);
+            this.panel7.Controls.Add(this.label22);
+            this.panel7.Controls.Add(this.label20);
             this.panel7.Controls.Add(this.panelHSV);
             this.panel7.Controls.Add(this.btnConvertHSV_RGB);
             this.panel7.Controls.Add(this.nudS);
@@ -436,7 +442,7 @@
             0,
             0});
             this.nudS.Name = "nudS";
-            this.nudS.Size = new System.Drawing.Size(66, 20);
+            this.nudS.Size = new System.Drawing.Size(44, 20);
             this.nudS.TabIndex = 1;
             this.nudS.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
             // 
@@ -458,14 +464,14 @@
             0,
             0});
             this.nudH.Name = "nudH";
-            this.nudH.Size = new System.Drawing.Size(66, 20);
+            this.nudH.Size = new System.Drawing.Size(44, 20);
             this.nudH.TabIndex = 0;
             this.nudH.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
             // 
             // trackBarV
             // 
             this.trackBarV.Location = new System.Drawing.Point(133, 125);
-            this.trackBarV.Maximum = 255;
+            this.trackBarV.Maximum = 100;
             this.trackBarV.Name = "trackBarV";
             this.trackBarV.Size = new System.Drawing.Size(122, 45);
             this.trackBarV.TabIndex = 17;
@@ -474,13 +480,8 @@
             // nudV
             // 
             this.nudV.Location = new System.Drawing.Point(32, 125);
-            this.nudV.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
             this.nudV.Name = "nudV";
-            this.nudV.Size = new System.Drawing.Size(66, 20);
+            this.nudV.Size = new System.Drawing.Size(44, 20);
             this.nudV.TabIndex = 2;
             this.nudV.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
             // 
@@ -811,6 +812,36 @@
             this.textBoxConvertCMYK_R.Size = new System.Drawing.Size(100, 20);
             this.textBoxConvertCMYK_R.TabIndex = 7;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(82, 66);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(20, 17);
+            this.label20.TabIndex = 21;
+            this.label20.Text = "%";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(82, 127);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(20, 17);
+            this.label22.TabIndex = 22;
+            this.label22.Text = "%";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(82, 17);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(14, 17);
+            this.label23.TabIndex = 23;
+            this.label23.Text = "°";
+            // 
             // RGB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -929,6 +960,9 @@
         private System.Windows.Forms.NumericUpDown nudK;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TrackBar trackBarK;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label20;
     }
 }
 

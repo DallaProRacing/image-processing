@@ -150,7 +150,7 @@ namespace Exercicios_1_Proce.Imagens
             if (h < 0)
                 h += 360;
 
-            return (h, s, v);
+            return (h, s*100, v*100);
         }
         private (int, int, int) HSVtoRGB(double h, double s, double v)
         {
@@ -196,14 +196,14 @@ namespace Exercicios_1_Proce.Imagens
 
             // RGB para HSV
             var (h, s, v) = RGBtoHSV(r, g, b);
-            textBoxConvertHSV.Text = $"H: {h:F0}, S: {s:F2}, V: {v:F2}";
+            textBoxConvertHSV.Text = $"H: {h:F0}°, S: {s:F2}%, V: {v:F2}%";
 
             // Escala de Cinza
             int gray = (int)(0.3 * r + 0.59 * g + 0.11 * b);
             textBoxConvertEscala.Text = gray.ToString();
 
             // RGB Normalizado
-            textBoxConvertNormal.Text = $"R: {r / 255.0:F2}, G: {g / 255.0:F2}, B: {b / 255.0:F2}";
+            textBoxConvertNormal.Text = $"R: {r / 255.0 * 100 :F2}, G: {g / 255.0 * 100:F2}, B: {b / 255.0 * 100:F2}";
         }
 
         private void btnConvertHSV_RGB_Click(object sender, EventArgs e)

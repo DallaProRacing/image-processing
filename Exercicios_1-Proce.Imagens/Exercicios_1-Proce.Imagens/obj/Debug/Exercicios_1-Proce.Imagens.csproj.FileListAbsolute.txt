@@ -8,3 +8,13 @@ D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Exercicios_1
 D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1-Proce.Imagens.exe
 D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1-Proce.Imagens.pdb
 D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1_Proce.Imagens.RGB.resources
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\bin\Debug\Exercicios_1-Proce.Imagens.exe.config
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\bin\Debug\Exercicios_1-Proce.Imagens.exe
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\bin\Debug\Exercicios_1-Proce.Imagens.pdb
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1-Proce.Imagens.csproj.AssemblyReference.cache
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1_Proce.Imagens.RGB.resources
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1_Proce.Imagens.Properties.Resources.resources
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1-Proce.Imagens.csproj.GenerateResource.cache
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1-Proce.Imagens.csproj.CoreCompileInputs.cache
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1-Proce.Imagens.exe
+D:\Documents\FACULDADE URI\QUINTO SEMESTRE\PROCESSAMENTO DE IMAGENS\Atividades\Exercicios_1-Proce.Imagens\Exercicios_1-Proce.Imagens\obj\Debug\Exercicios_1-Proce.Imagens.pdb

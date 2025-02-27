@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Exercicios_1-Proce.Imagens\\",
+  "WorkspaceRootPath": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Atividades\\Exercicios_1-Proce.Imagens\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46F38097-7F8E-42CE-8180-FB7752616B92}|Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens.csproj|d:\\documents\\faculdade uri\\quinto semestre\\processamento de imagens\\exercicios_1-proce.imagens\\exercicios_1-proce.imagens\\rgb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{46F38097-7F8E-42CE-8180-FB7752616B92}|Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens.csproj|d:\\documents\\faculdade uri\\quinto semestre\\processamento de imagens\\atividades\\exercicios_1-proce.imagens\\exercicios_1-proce.imagens\\rgb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{46F38097-7F8E-42CE-8180-FB7752616B92}|Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens.csproj|solutionrelative:exercicios_1-proce.imagens\\rgb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46F38097-7F8E-42CE-8180-FB7752616B92}|Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens.csproj|d:\\documents\\faculdade uri\\quinto semestre\\processamento de imagens\\exercicios_1-proce.imagens\\exercicios_1-proce.imagens\\rgb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46F38097-7F8E-42CE-8180-FB7752616B92}|Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens.csproj|d:\\documents\\faculdade uri\\quinto semestre\\processamento de imagens\\atividades\\exercicios_1-proce.imagens\\exercicios_1-proce.imagens\\rgb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46F38097-7F8E-42CE-8180-FB7752616B92}|Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens.csproj|solutionrelative:exercicios_1-proce.imagens\\rgb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,20 +20,6 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RGB.cs",
-              "DocumentMoniker": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens\\RGB.cs",
-              "RelativeDocumentMoniker": "Exercicios_1-Proce.Imagens\\RGB.cs",
-              "ToolTip": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens\\RGB.cs",
-              "RelativeToolTip": "Exercicios_1-Proce.Imagens\\RGB.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAmwFwAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T00:20:26.071Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
@@ -56,14 +42,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RGB.cs",
+              "DocumentMoniker": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Atividades\\Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens\\RGB.cs",
+              "RelativeDocumentMoniker": "Exercicios_1-Proce.Imagens\\RGB.cs",
+              "ToolTip": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Atividades\\Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens\\RGB.cs",
+              "RelativeToolTip": "Exercicios_1-Proce.Imagens\\RGB.cs",
+              "ViewState": "AQIAALwAAAAAAAAAAAAowM0AAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:42:18.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "RGB.cs [Design]",
-              "DocumentMoniker": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens\\RGB.cs",
+              "DocumentMoniker": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Atividades\\Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens\\RGB.cs",
               "RelativeDocumentMoniker": "Exercicios_1-Proce.Imagens\\RGB.cs",
-              "ToolTip": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens\\RGB.cs [Design]",
+              "ToolTip": "D:\\Documents\\FACULDADE URI\\QUINTO SEMESTRE\\PROCESSAMENTO DE IMAGENS\\Atividades\\Exercicios_1-Proce.Imagens\\Exercicios_1-Proce.Imagens\\RGB.cs [Design]",
               "RelativeToolTip": "Exercicios_1-Proce.Imagens\\RGB.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-26T23:57:49.312Z",
+              "WhenOpened": "2025-02-27T17:28:21.01Z",
               "EditorCaption": " [Design]"
             }
           ]
