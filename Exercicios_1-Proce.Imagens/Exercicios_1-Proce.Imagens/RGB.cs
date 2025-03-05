@@ -101,13 +101,15 @@ namespace Exercicios_1_Proce.Imagens
             int Y = trackBarY.Value;
             int K = trackBarK.Value;
 
-
-
+            // Atualiza o painel RGB normalmente
             panelCorRGB.BackColor = Color.FromArgb(R, G, B);
 
-            panelHSV.BackColor = Color.FromArgb(H, S, V);
+            // Converte HSV para RGB e aplica no painel
+            (int rHSV, int gHSV, int bHSV) = HSVtoRGB(H, S, V);
+            panelHSV.BackColor = Color.FromArgb(rHSV, gHSV, bHSV);
 
-            panelCMYK.BackColor = Color.FromArgb(C, M, Y, K);
+            (int rCMYK, int gCMYK, int bCMYK) = CMYKtoRGB(C, M, Y, K);
+            panelCMYK.BackColor = Color.FromArgb(rCMYK, gCMYK, bCMYK);
         }
 
         private (double, double, double, double) RGBtoCMYK(int r, int g, int b)
@@ -154,30 +156,65 @@ namespace Exercicios_1_Proce.Imagens
         }
         private (int, int, int) HSVtoRGB(double h, double s, double v)
         {
-            double c = v * s;
-            double x = c * (1 - Math.Abs((h / 60) % 2 - 1));
-            double m = v - c;
+            // Converter valores para a escala correta
+            double hDegrees = (h / 255.0) * 360;  // De 1-255 para 0-360 graus
+            double sPercent = (s / 255.0) * 100;  // De 1-255 para 0-100%
+            double vPercent = (v / 255.0) * 100;  // De 1-255 para 0-100%
 
-            double r = 0, g = 0, b = 0;
+            // Normalizar valores para a fórmula
+            double sNorm = sPercent / 100;
+            double vNorm = vPercent / 100;
 
-            if (h >= 0 && h < 60) { r = c; g = x; b = 0; }
-            else if (h >= 60 && h < 120) { r = x; g = c; b = 0; }
-            else if (h >= 120 && h < 180) { r = 0; g = c; b = x; }
-            else if (h >= 180 && h < 240) { r = 0; g = x; b = c; }
-            else if (h >= 240 && h < 300) { r = x; g = 0; b = c; }
-            else if (h >= 300 && h < 360) { r = c; g = 0; b = x; }
+            double c = vNorm * sNorm;
+            double x = c * (1 - Math.Abs((hDegrees / 60.0) % 2 - 1));
+            double m = vNorm - c;
 
-            return ((int)((r + m) * 255), (int)((g + m) * 255), (int)((b + m) * 255));
+            double r, g, b;
+            if (hDegrees >= 0 && hDegrees < 60) { r = c; g = x; b = 0; }
+            else if (hDegrees >= 60 && hDegrees < 120) { r = x; g = c; b = 0; }
+            else if (hDegrees >= 120 && hDegrees < 180) { r = 0; g = c; b = x; }
+            else if (hDegrees >= 180 && hDegrees < 240) { r = 0; g = x; b = c; }
+            else if (hDegrees >= 240 && hDegrees < 300) { r = x; g = 0; b = c; }
+            else { r = c; g = 0; b = x; }
+
+            return (
+                (int)Math.Round((r + m) * 255),
+                (int)Math.Round((g + m) * 255),
+                (int)Math.Round((b + m) * 255)
+            );
         }
 
-        private (int, int, int) CMYKtoRGB(double c, double m, double y, double k)
+
+
+
+        private (int, int, int) CMYKtoRGB(double C, double M, double Y, double K)
         {
-            int r = (int)(255 * (1 - c) * (1 - k));
-            int g = (int)(255 * (1 - m) * (1 - k));
-            int b = (int)(255 * (1 - y) * (1 - k));
+            // Converte os valores CMYK (0-100) para o intervalo 0-1
+            double c = C / 100.0;
+            double m = M / 100.0;
+            double y = Y / 100.0;
+            double k = K / 100.0;
 
-            return (r, g, b);
+            // Caso em que K é 1 (preto completo), todos os valores RGB serão 0
+            if (k == 1)
+            {
+                return (0, 0, 0);
+            }
+
+            // Calcula os valores RGB usando a fórmula ajustada
+            int R = (int)((1 - c) * (1 - k) * 255);
+            int G = (int)((1 - m) * (1 - k) * 255);
+            int B = (int)((1 - y) * (1 - k) * 255);
+
+            // Garante que os valores RGB estejam entre 0 e 255
+            R = Math.Max(0, Math.Min(255, R));
+            G = Math.Max(0, Math.Min(255, G));
+            B = Math.Max(0, Math.Min(255, B));
+
+            return (R, G, B);
         }
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -209,8 +246,8 @@ namespace Exercicios_1_Proce.Imagens
         private void btnConvertHSV_RGB_Click(object sender, EventArgs e)
         {
             double h = (double)nudH.Value;
-            double s = (double)nudS.Value / 100;
-            double v = (double)nudV.Value / 100;
+            double s = (double)nudS.Value;
+            double v = (double)nudV.Value;
 
             var (r, g, b) = HSVtoRGB(h, s, v);
 
@@ -218,16 +255,19 @@ namespace Exercicios_1_Proce.Imagens
             textBoxConvertG.Text = g.ToString();
             textBoxConvertB.Text = b.ToString();
         }
-
+        
         private void btnConvertCMYK_RGB_Click(object sender, EventArgs e)
         {
-            double c = (double)nudC.Value / 100;
-            double m = (double)nudM.Value / 100;
-            double y = (double)nudY.Value / 100;
-            double k = (double)nudK.Value / 100;
+            // CMYK valores são passados em porcentagem (0-100)
+            double c = (double)nudC.Value;
+            double m = (double)nudM.Value;
+            double y = (double)nudY.Value;
+            double k = (double)nudK.Value;
 
+            // Converte de CMYK para RGB
             var (r, g, b) = CMYKtoRGB(c, m, y, k);
 
+            // Atualiza os valores convertidos
             textBoxConvertCMYK_R.Text = r.ToString();
             textBoxConvertCMYK_G.Text = g.ToString();
             textBoxConvertCMYK_B.Text = b.ToString();

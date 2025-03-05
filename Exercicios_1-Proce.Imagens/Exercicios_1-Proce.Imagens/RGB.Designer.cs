@@ -54,6 +54,9 @@
             this.HSV_RGB = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.panelHSV = new System.Windows.Forms.Panel();
             this.btnConvertHSV_RGB = new System.Windows.Forms.Button();
             this.nudS = new System.Windows.Forms.NumericUpDown();
@@ -94,9 +97,6 @@
             this.textBoxConvertCMYK_G = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.textBoxConvertCMYK_R = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.tabControl_RGB_HSV.SuspendLayout();
             this.RGB_All.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -415,6 +415,36 @@
             this.panel7.Size = new System.Drawing.Size(432, 222);
             this.panel7.TabIndex = 19;
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(82, 17);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(14, 17);
+            this.label23.TabIndex = 23;
+            this.label23.Text = "°";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(82, 127);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(20, 17);
+            this.label22.TabIndex = 22;
+            this.label22.Text = "%";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(82, 66);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(20, 17);
+            this.label20.TabIndex = 21;
+            this.label20.Text = "%";
+            // 
             // panelHSV
             // 
             this.panelHSV.BackColor = System.Drawing.Color.White;
@@ -471,7 +501,7 @@
             // trackBarV
             // 
             this.trackBarV.Location = new System.Drawing.Point(133, 125);
-            this.trackBarV.Maximum = 100;
+            this.trackBarV.Maximum = 255;
             this.trackBarV.Name = "trackBarV";
             this.trackBarV.Size = new System.Drawing.Size(122, 45);
             this.trackBarV.TabIndex = 17;
@@ -480,6 +510,11 @@
             // nudV
             // 
             this.nudV.Location = new System.Drawing.Point(32, 125);
+            this.nudV.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
             this.nudV.Name = "nudV";
             this.nudV.Size = new System.Drawing.Size(44, 20);
             this.nudV.TabIndex = 2;
@@ -701,6 +736,11 @@
             this.nudC.Name = "nudC";
             this.nudC.Size = new System.Drawing.Size(66, 20);
             this.nudC.TabIndex = 0;
+            this.nudC.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudC.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
             // 
             // trackBarY
@@ -750,6 +790,7 @@
             this.trackBarC.Name = "trackBarC";
             this.trackBarC.Size = new System.Drawing.Size(115, 45);
             this.trackBarC.TabIndex = 15;
+            this.trackBarC.Value = 1;
             this.trackBarC.Scroll += new System.EventHandler(this.TrackBar_Scroll);
             // 
             // label15
@@ -811,36 +852,6 @@
             this.textBoxConvertCMYK_R.Name = "textBoxConvertCMYK_R";
             this.textBoxConvertCMYK_R.Size = new System.Drawing.Size(100, 20);
             this.textBoxConvertCMYK_R.TabIndex = 7;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(82, 66);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(20, 17);
-            this.label20.TabIndex = 21;
-            this.label20.Text = "%";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(82, 127);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(20, 17);
-            this.label22.TabIndex = 22;
-            this.label22.Text = "%";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(82, 17);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(14, 17);
-            this.label23.TabIndex = 23;
-            this.label23.Text = "°";
             // 
             // RGB
             // 
